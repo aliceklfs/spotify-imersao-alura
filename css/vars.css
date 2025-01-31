@@ -1,0 +1,9 @@
+:root {
+    /* carregar fonte  */
+    --font-dm-sans: "DM Sans", sans-serif; /* --font-nome da fonte-sans: */
+    
+    /* cores */
+    --bg-icon: #131313;
+    --bg-arrow-color: rgba(0,0,07); 
+
+}
