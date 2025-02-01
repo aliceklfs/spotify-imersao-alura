@@ -6,12 +6,11 @@
     <title>Spotify Imersão</title>
     <link rel="icon" href="assets/icons/favicon.png">
     
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/vars.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/style.css">
-    
-
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/vars.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/main.css">
+     
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
     integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
 
@@ -20,30 +19,25 @@
 
 </head>
 <body>
-    <div class="sidebar">
+    <aside class="sidebar">
         <nav class="sidebar-navigation">
             <div class="logo">
                 <a href="">
-                    <img src="./assets/icons/logo-spotify.png" alt="logo do spotify">
+                    <img src="src/assets/icons/logo-spotify.png" alt="logo do spotify">
                 </a>
             </div>
                 
             <ul>
                 <li>
                     <a href="">
-                        <span class="fa fa-home">
-                            <img src="./assets/icons/" alt="">
-                        </span>
-
+                        <span class="fa fa-home"></span>
                         <span>Início</span>
                     </a>
                 </li>
 
                 <li>
                     <a href="">
-                        <span class="fa fa-search">
-                            <img src="./assets/icons/" alt="">
-                        </span>
+                        <span class="fa fa-search"></span>
                         <span>Buscar</span>
                     </a>
                 </li>
@@ -58,44 +52,44 @@
                 </button>
                 <span class="fa fa-plus"></span>
             </div>
-        </div>
 
-        <section class="section-playlist">
-            <div class="section-playlist-content">
-                <span class="text title">Crie sua playlist</span>
-                <span class="text subtitle">é fácil, vamos te ajudar</span>
-                <button class="section-playlist-button">
-                    <span>Criar playlist</span>
+            <section class="section-playlist">
+                <div class="section-playlist-content">
+                    <span class="text title">Crie sua playlist</span>
+                    <span class="text subtitle">é fácil, vamos te ajudar</span>
+                    <button class="section-playlist-button">
+                        <span>Criar playlist</span>
+                    </button>
+                </div>
+            </section>
+
+            <div class="cookies">
+                <a href="">Cookies</a>
+            </div>
+
+            <div class="languages">
+                <button class="languages-button">
+                    <span class="fa fa-globe"></span>
+                    <span>Português do Brasil</span>
                 </button>
             </div>
-        </section>
-
-        <div class="cookies">
-            <a href="">Cookies</a>
-        </div>
-    
-        <div class="languages">
-            <button class="languages-button">
-                <span class="fa fa-globe"></span>
-                <span>Português do Brasil</span>
-            </button>
-        </div>
-    </div>
+        </div>   
+    </aside>
 
     <main>
         <div class="main-container">
             <nav class="header-navigation">
                 <div class="navigation">
                     <button class="arrow-left">
-                        <img src="./assets/icons/small-left.png" alt="seta-esquerda">
+                        <img src="src/assets/icons/small-left.png" alt="seta-esquerda">
                     </button>
 
                     <button class="arrow-right">
-                        <img src="./assets/icons/small-right.png" alt="seta-direita">
+                        <img src="src/assets/icons/small-right.png" alt="seta-direita">
                     </button>
                 </div>
                 <div class="header-search">
-                    <img src="./assets/icons/search.png" alt="">
+                    <img src="src/assets/icons/search.png" alt="">
                     <input id="search-input" type="text" maxlength="800" placeholder="O que você quer ouvir?">
                 </div>
 
@@ -104,6 +98,35 @@
                     <button class="login">Entrar</button>
                 </div>
             </nav>
+
+            <!--PLAYLIST-->
+            <div class="playlist-container">
+                <div id="result-playlists">
+                    <div class="playlist">
+                        <h1 id="greeting">Boas vindas</h1>
+                        <h2 class="greeting-subtitle">Navegar por todas as seções</h2>
+                    </div>
+                </div>
+
+                <!--LIST DE CARDS-->
+                <div class="offer-scroll-container">
+                    <div class="offer-list">
+                        <section class="offer-list-item">
+                            
+                            <!--CARD 1-->
+                            <a href="cards">
+                                <div class="cards card1">
+                                    <img src="/assets/playlist/1.jpeg" alt="">
+                                    <span>Boas festas</span>
+                                </div>
+                            </a>
+                            
+                        </section>
+                    </div>
+                </div>
+
+                
+            </div>
         </div>
     </main>
 

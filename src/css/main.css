@@ -88,3 +88,34 @@
     font-weight: 700;
     border-radius: 40px;
 }
+
+.header-login .login:hover {
+    background-color: #1db954;
+}
+
+/* PLAYLIST */
+.playlist-container {
+    background-color: #121212;
+    height: 68vh;
+    padding-top: 16px;
+    margin: 10px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.playlist {
+    margin:24px;
+}
+
+.playlist #greeting {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 48px;
+}
+
+.playlist .greeting-subtitle {  
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
